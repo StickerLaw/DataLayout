@@ -56,12 +56,7 @@ int main(){
 	// allocate two memory location
 	int* closeToNode0;// = new int[1000];
 	int* closeToNode1;// = new int[1000];
-/*
-	for (int i=0; i<1000; i++){
-		closeToNode0[i] = i;
-		closeToNode1[i] = i+3000;
-	}
-*/
+
 	struct coreNumAndAddr parameter0;
 	struct coreNumAndAddr parameter1;
 
@@ -92,12 +87,11 @@ int main(){
 		cout<<(*tmp)[i]<<endl;
 	}
 
-
-//	for (int i =0; i<1000; i++){
-//		cout<<closeToNode1[i]<<endl;
-//	}
-
-
+	for (int i =0; i<1000; i++){
+		int** tmp = parameter1.addrOfAddr;
+		if (tmp ==NULL) cout<<"hhhhhh"<<endl;
+		cout<<(*tmp)[i]<<endl;
+	}
 
 	// create a bunch of threads randomly assign to different cores.
 	for (int i=0; i<NumThreads/2; i++){

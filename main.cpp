@@ -107,10 +107,6 @@ int main(){
 		cout<<(*tmp)[i]<<endl;
 	}
 
-
-
-
-
 	// create a bunch of threads randomly distributed them on different cores.
 	struct tidAndAddr p[NumThreads];
 
